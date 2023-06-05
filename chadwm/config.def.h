@@ -156,7 +156,7 @@ static const Key keys[] = {
     {MODKEY,                            XK_u,       spawn,
         SHCMD("maim --select | xclip -selection clipboard -t image/png")},
 
-    { MODKEY,                           XK_c,       spawn,          SHCMD("rofi -show drun") },
+    { MODKEY,                           XK_c,       spawn,          SHCMD("bash $HOME/.config/rofi/bin/{launcher,runner,powermenu,screenshot}") },
     { MODKEY,                           XK_Return,  spawn,            SHCMD(TERMINAL)},
 
     // toggle stuff
