@@ -255,6 +255,11 @@ static const Key keys[] = {
     TAGKEYS(                            XK_7,                       6)
     TAGKEYS(                            XK_8,                       7)
     TAGKEYS(                            XK_9,                       8)
+
+    // Programs
+    { MODKEY|ShiftMask,         XK_x,   spawn,  SHCMD("betterlockscreen -l") },   // lock the screen
+    { MODKEY|ShiftMask,         XK_b,   spawn,  SHCMD("$BROWSER") },       // open browser instance
+    { MODKEY|ControlMask,       XK_e,   spawn,  SHCMD("rofi -show emoji -modi emoji") },   // get emoji menu prom
 };
 
 /* button definitions */
